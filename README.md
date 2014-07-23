@@ -35,7 +35,12 @@ Plus, LIFX bulbs could have be driven directly through, but in real life bulbs a
 
 The aim of this daemon is to checkup every minutes and keep updated the list of bulbs awaiting for orders and ready to accept orders immediately.
 
-If you already have downloaded the [official LIFX gem](https://github.com/LIFX/lifx-gem) you can install this two viki files into the examples already provided : 
+1) First you can checkup your ruby versin with `ruby -v` and something like this shuld appear :
+```
+ruby 2.1.2p95 (2014-05-08 revision 45877) [armv6l-linux-eabihf]
+```
+
+2) If you already have downloaded the [official LIFX gem](https://github.com/LIFX/lifx-gem) you can install this two viki files into the examples already provided : 
 
 ```
 /lifx-gem/examples/
@@ -53,8 +58,9 @@ If you already have downloaded the [official LIFX gem](https://github.com/LIFX/l
     └── viki.rb
 ```
 
-And you just have to run the command `bundle`
+3) And you just have to run the command `bundle` into the folder `/lifx-gem/examples/viki`.
 
+4) As soon as the bundle is completed, you just have to start the daemon with the command : `ruby viki.rb`
 
 ## Customization
 
