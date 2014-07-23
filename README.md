@@ -52,7 +52,7 @@ The aim of **this daemon** is to checkup every minutes and to **keep updated the
 
 LIFX bulbs have to be discovered to get addresses, status and to be able to send an order to them. This is a problem if you need a light to power on AS SOON AS you want to, and not 30 seconds after you are in the room (we'll talk later about Z-Wave or 433Mhz interface).
 
-1) First you can checkup your ruby versin with `ruby -v` and something like this shuld appear :
+1) First you can checkup your ruby version with `ruby -v` and something like this should appear :
 ```
 ruby 2.1.2p95 (2014-05-08 revision 45877) [armv6l-linux-eabihf]
 ```
