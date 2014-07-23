@@ -27,13 +27,30 @@ Now i have two working kinects, one for each floor, and the source code is only 
 
 ### Kinect
 
+You'll have to be sure to have installed every software development toolkits for the binary program to work. Here is a list of the "only" files you need to get things work, i recommend to install every files with this order :
+
+* KinectSDK-v2.0-PublicPreview1407-Setup.exe (even if you have a Kinect v1, it improves recognition)
+* KinectRuntime-v1.8-Setup.exe
+* MSSpeech_SR_en-US_TELE.msi
+* MSSpeech_SR_fr-FR_TELE.msi
+* MSSpeech_TTS_fr-FR_Hortense.msi
+* MSSpeech_TTS_en-GB_Hazel.msi
+* MSSpeech_TTS_en-US_Helen.msi
+* MSSpeech_TTS_en-US_ZiraPro.msi
+* MicrosoftSpeechPlatformSDK.msi (x86)
+* MicrosoftSpeechPlatformSDK.msi (64)
+* SpeechPlatformRuntime.msi (x86)
+* SpeechPlatformRuntime.msi (64)
+* KinectSpeechLanguagePack_fr-FR.exe
+
+Facultative :
+* wdexpress_full.exe (if you want to quickly customize logic with visual studio express)
+
 ### Ruby LIFX daemon
 
-LIFX bulbs have to be discovered to get addresses, status and to be able to send an order to them. This is a problem if you need a light to power on AS SOON AS you want to, and not 30 seconds after you are in the room (we'll talk later about Z-Wave or 433Mhz interface).
-
-Plus, LIFX bulbs could have be driven directly through, but in real life bulbs and sometimes OFF (by the wall switch), and back ON later etc...
-
 The aim of **this daemon** is to checkup every minutes and to **keep updated the list of living bulbs** ready to accept orders immediately.
+
+LIFX bulbs have to be discovered to get addresses, status and to be able to send an order to them. This is a problem if you need a light to power on AS SOON AS you want to, and not 30 seconds after you are in the room (we'll talk later about Z-Wave or 433Mhz interface).
 
 1) First you can checkup your ruby versin with `ruby -v` and something like this shuld appear :
 ```
