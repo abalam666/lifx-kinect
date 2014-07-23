@@ -80,7 +80,11 @@ ruby 2.1.2p95 (2014-05-08 revision 45877) [armv6l-linux-eabihf]
 
 ## Customization
 
-### Robot name : how can i change the name 'viki' to something else ?
+### Robot name : how can i change the name *viki* to something else ?
+
+I'm using this name for my bot, from the movie "I, Robot" ([Virtual Interactive Kinetic Intelligence](http://en.wikipedia.org/wiki/I,_Robot_(film))). But you can change the name with the parameter `botname`.
+
+I personnaly use to change the name of my bot when i want, we could create themes to speak with samples instead of microsoft text-to-speech. These days, it is named McFly, and it calls me Doc ^^
 
 ### Grammar : how can i setup the words it can recognize ?
 
