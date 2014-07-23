@@ -1,5 +1,5 @@
 # lifx-kinect
-Drive all your **lifx bulbs** in your house **with your voice**.
+Drive **lifx bulbs with your voice**.
 
 ## Requirements
 * a **Kinect** plugged on **Windows 8+**
