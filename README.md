@@ -2,11 +2,11 @@
 Drive all your lifx bulbs in your house with your voice.
 
 ## Requirements
-* a Kinect plugged on Windows 8
-* Ruby 2 installed
+* a Kinect plugged on Windows 8+
+* Ruby 2.0+
 
 ## Recommended
-* several fanless NUC ( like Intel DE3815TYKHE, low power consumption ) with Windows 8 with a Kinect v2 (in each rooms)
+* one (for each room) fanless NUC ( like Intel DE3815TYKHE, low power consumption ) with Windows 8 and a Kinect v2
 * one Raspberry as LIFX daemon server
 
 What is LIFX ?
