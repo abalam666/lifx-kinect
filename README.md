@@ -4,12 +4,12 @@ Drive **lifx bulbs with your voice**.
 ## Requirements
 * a **Kinect** plugged on **Windows 8+**
 * **Ruby 2.0+** with [official LIFX gem](https://github.com/LIFX/lifx-gem)
-* No particulary skills in development
+* No skills in development
 
-## Recommended
+## Recommended hardware
 * one (for each room) fanless NUC ( like [Intel DE3815TYKHE](http://www.intel.com/content/www/us/en/nuc/nuc-kit-de3815tykhe.html), low power consumption ) with Windows 8 and a Kinect v2
-* one Raspberry as LIFX daemon server
-* Small experiences in procedural programmation if you want to customize the Grammar, Voices, or Language you want (i will create a small configuration file later)
+* one Raspberry as LIFX daemon server and other webservices to hack (informations grabbing, etc...)
+* Small experiences in procedural programmation if you want to customize the logic
 
 ## How does it work ?
 
@@ -21,7 +21,7 @@ I finally tried a Kinect bought 15 EUR on ebay.
 And my conclusion if that **the Kinect is truly at this time the best association of good but cheap hardware and good software development kit provided**.
 Yes it's C#, but it's easy enough to make small orders to drive LIFX bulbs.
 
-Now i have two working kinects, one for each floor, and the source code is only 140 lines in Ruby, and 100 lines in C#.
+Now i have two working kinects, one for each floor, and the source code is only 140 lines in Ruby, and 300 lines in C#.
 
 ## Installation
 
@@ -37,7 +37,7 @@ You'll have to be sure to have installed every software development toolkits for
 * [KinectSpeechLanguagePack_fr-FR.exe and all you want](http://www.microsoft.com/en-ie/download/details.aspx?id=34809)
 
 Facultative :
-* wdexpress_full.exe (if you want to quickly customize logic with visual studio express)
+* [wdexpress_full.exe](http://www.microsoft.com/france/visual-studio/essayez/express.aspx) (if you want to quickly customize logic with visual studio express)
 
 ### Ruby LIFX daemon
 
@@ -71,6 +71,12 @@ ruby 2.1.2p95 (2014-05-08 revision 45877) [armv6l-linux-eabihf]
 3) And you just have to run the command `bundle` into the folder `/lifx-gem/examples/viki`.
 
 4) As soon as the bundle is completed, you just have to start the daemon with the command : `ruby viki.rb`
+
+5) The program should display the number of bulbs discovered in the 10 first seconds, then it will rediscover every 60 seconds.
+
+6) You should be able to connect to the tiny synthesis of your bulbs here : http://localhost:1234/
+
+
 
 ## Customization
 
