@@ -82,9 +82,9 @@ ruby 2.1.2p95 (2014-05-08 revision 45877) [armv6l-linux-eabihf]
 
 ### Robot name : how can i change the name 'viki' to something else ?
 
-### Grammar : how can i make the words  ?
+### Grammar : how can i setup the words it can recognize ?
 
-### Trigger events : how can i make 'viki' to call other webervices and talk back the answer ?
+### Trigger events : how can i make *viki* to call other webervices and talk back the answer ?
 
 #What is LIFX ?
 
