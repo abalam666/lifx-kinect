@@ -15,7 +15,7 @@ Drive all your lifx bulbs in your house with your voice.
 
 LIFX team provide a lot of work ex-nihilo in only two years, but there is only 3 official languages API : [Obj-C](https://github.com/LIFX/LIFXKit) for iOS and [Java](https://github.com/LIFX/lifx-sdk-android) for Android and [Ruby](https://github.com/LIFX/lifx-gem) for everything else.
 
-Microsoft created the Kinect for XBox experience, and after trying every voice recognition possible (independant opensource projects, android, ios hacks...) but the problem is not really the software. Microphone has to be very good to catch words without paying too attention to the noise around in rooms of life in a common house.
+Microsoft created the Kinect for XBox experience, and after trying every voice recognition tools found ([independant opensource projects](http://en.wikipedia.org/wiki/List_of_speech_recognition_software), android, ios hacks...) but the problem is not really the software. Microphone has to be very good to catch words without paying too attention to the noise around in rooms of life in a common house.
 
 I finally tried a Kinect bought 15 EUR on ebay.
 And my conclusion if that the Kinect is truly at this time the best association of good hardware and good software development kit provided.
