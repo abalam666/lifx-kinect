@@ -29,19 +29,13 @@ Now i have two working kinects, one for each floor, and the source code is only 
 
 You'll have to be sure to have installed every software development toolkits for the binary program to work. Here is a list of the "only" files you need to get things work, i recommend to install every files with this order :
 
-* KinectSDK-v2.0-PublicPreview1407-Setup.exe (even if you have a Kinect v1, it improves recognition)
-* KinectRuntime-v1.8-Setup.exe
+* [KinectSDK-v2.0-PublicPreview1407-Setup.exe](http://www.microsoft.com/en-ie/download/details.aspx?id=43661) (even if you have a Kinect v1, it improves recognition)
+* [KinectRuntime-v1.8-Setup.exe](http://www.microsoft.com/en-us/download/details.aspx?id=40277)
 * MSSpeech_SR_en-US_TELE.msi
-* MSSpeech_SR_fr-FR_TELE.msi
-* MSSpeech_TTS_fr-FR_Hortense.msi
-* MSSpeech_TTS_en-GB_Hazel.msi
-* MSSpeech_TTS_en-US_Helen.msi
-* MSSpeech_TTS_en-US_ZiraPro.msi
-* MicrosoftSpeechPlatformSDK.msi (x86)
-* MicrosoftSpeechPlatformSDK.msi (64)
-* SpeechPlatformRuntime.msi (x86)
-* SpeechPlatformRuntime.msi (64)
-* KinectSpeechLanguagePack_fr-FR.exe
+* MSSpeech_SR_fr-FR_TELE.msi and MSSpeech_TTS_en-GB_Hazel.msi...[and all localisation you want](http://www.microsoft.com/en-us/download/details.aspx?id=3971)...
+* [MicrosoftSpeechPlatformSDK.msi (x86 and x64)](http://www.microsoft.com/en-us/download/details.aspx?id=27226)
+* [SpeechPlatformRuntime.msi (x86 and x64)](http://www.microsoft.com/en-us/download/details.aspx?id=27225)
+* KinectSpeechLanguagePack_fr-FR.exe [and all you want](http://www.microsoft.com/en-ie/download/details.aspx?id=34809)
 
 Facultative :
 * wdexpress_full.exe (if you want to quickly customize logic with visual studio express)
