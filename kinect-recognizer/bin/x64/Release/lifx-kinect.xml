@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<lifx_kinect
+    botname="viki"
+    voice="FR, Hortense"
+    recognitionLanguage="fr-FR"
+    wakeupnow="réveille-toi s'il te plait"
+    sleepnow="endors-toi s'il te plait"
+    turnon="allume"
+    turnoff="éteint"
+    colorize="colore"
+    slowly="lentement"
+    lifxUrl="http://192.168.66.150:1234/"
+    errorMessageWebService="Toutes mes excuses, le service web associé à cette demande a retourné le message d'erreur suivant : "
+    >
+  <custom_grammars>
+    <grammar url="http://home.aewd.net/api/getTemperature/cuisine" words="quelle est la température de la cuisine" />
+    <grammar url="http://home.aewd.net/api/getTemperature/chambre" words="quelle est la température de la chambre" />
+    <grammar url="http://home.aewd.net/api/getTemperature/salon" words="quelle est la température du salon" />
+    <grammar url="http://home.aewd.net/api/getVent" words="quelle est la température de la cuisine" />
+    <grammar url="http://home.aewd.net/api/getConso" words="combien consomme la maison" />
+    <grammar url="http://home.aewd.net/api/getConso" words="quelle est la consommation actuelle" />
+  </custom_grammars>
+  <lifx_grammars>
+    <colors>
+      <color code="red" words="en rouge" />
+      <color code="darkred" words="en rouge foncé" />
+      <color code="lightred" words="en rouge clair" />
+      <color code="lightred" words="en rouge pâle" />
+      <color code="orange" words="en orange" />
+      <color code="darkorange" words="en orange foncé" />
+      <color code="lightorange" words="en orange clair" />
+      <color code="lightorange" words="en orange pâle" />
+      <color code="yellow" words="en jaune" />
+      <color code="darkyellow" words="en jaune foncé" />
+      <color code="lightyellow" words="en jaune clair" />
+      <color code="lightyellow" words="en jaune pâle" />
+      <color code="green" words="en vert" />
+      <color code="darkgreen" words="en vert foncé" />
+      <color code="lightgreen" words="en vert clair" />
+      <color code="lightgreen" words="en vert pâle" />
+      <color code="cyan" words="en cyan" />
+      <color code="darkcyan" words="en cyan foncé" />
+      <color code="lightcyan" words="en cyan clair" />
+      <color code="lightcyan" words="en cyan pâle" />
+      <color code="blue" words="en bleu" />
+      <color code="darkblue" words="en bleu foncé" />
+      <color code="lightblue" words="en bleu clair" />
+      <color code="lightblue" words="en bleu pâle" />
+      <color code="pink" words="en rose" />
+      <color code="darkpink" words="en rose foncé" />
+      <color code="lightpink" words="en rose clair" />
+      <color code="lightpink" words="en rose pâle" />
+      <color code="purple" words="en violet" />
+      <color code="darkpurple" words="en violet foncé" />
+      <color code="lightpurple" words="en violet clair" />
+      <color code="lightpurple" words="en violet pâle" />
+      <color code="white" words="en blanc" />
+      <color code="random" words="en ce que tu veux" />
+      <color code="random" words="comme tu veux" />
+    </colors>
+    <zones>
+      <zone path="all" words="toute la maison" />
+      <zone path="tag/RDC" words="le rez-de-chaussée" />
+      <zone path="tag/Etage" words="l'étage" />
+      <zone path="tag/Chambre" words="la chambre" />
+      <zone path="tag/Cuisine" words="la cuisine" />
+      <zone path="tag/Salle de bain" words="la salle de bain" />
+      <zone path="tag/Salle à manger" words="la salle a manger" />
+      <zone path="tag/Salon" words="le salon" />
+      <zone path="d073d5003d91" words="les bureaux" />
+      <zone path="d073d5006225" words="notre lit" />
+      <zone path="d073d500cd62" words="l'entrée" />
+      <zone path="d073d50167f0" words="l'escalier" />
+      <zone path="d073d500d6ca" words="le couloir" />
+    </zones>
+  </lifx_grammars>
+</lifx_kinect>
