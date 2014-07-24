@@ -151,7 +151,7 @@ http://localhost:1234/color/d073d500cd62/darkpurple
 ...etc...
 ```
 
-### Trigger events : how can i make *viki* to call other webervices and talk back the answer ?
+### Trigger events : how can i make *viki* to call other *not-LIFX* webervices and talk back the answer ?
 
 In the same XML, you can customize any web service, and the text-to-speech will say the result.
 
