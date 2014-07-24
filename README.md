@@ -4,7 +4,7 @@ Drive **lifx bulbs with your voice**.
 [![ScreenShot](http://img4.hostingpics.net/pics/325982ScreenShot241.jpg)](http://youtu.be/uEPNLfaTRe4)
 
 ## Requirements
-* a **Kinect** plugged on **Windows 8+**
+* a **Kinect** plugged on **Windows 8+** *(in fact, a Kinect is not a must, but if you want a casual experience at home without an headset, or a desk microphone you really should use a Kinect)*
 * **Ruby 2.0+** with [official LIFX gem](https://github.com/LIFX/lifx-gem)
 * No skills in development
 
