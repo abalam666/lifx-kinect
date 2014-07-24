@@ -15,7 +15,7 @@
   <custom_grammars>
     <grammar url="http://your.web.service.com/api/getTemperature/cuisine" words="quelle est la température de la cuisine" />
     <grammar url="http://your.web.service.com/api/getTemperature/chambre" words="quelle est la température de la chambre" />
-    <grammar url="http://your.web.service.comt/api/getTemperature/salon" words="quelle est la température du salon" />
+    <grammar url="http://your.web.service.com/api/getTemperature/salon" words="quelle est la température du salon" />
     <grammar url="http://your.web.service.com/api/getVent" words="quelle est la température de la cuisine" />
     <grammar url="http://your.web.service.com/api/getConso" words="combien consomme la maison" />
     <grammar url="http://your.web.service.com/api/getConso" words="quelle est la consommation actuelle" />
