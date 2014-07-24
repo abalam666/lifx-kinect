@@ -116,12 +116,13 @@ You just have to setup the parameter *botname* in the main parameters in the XML
 ### Grammar : how can i setup the zones in my house, and map spoken words to particulary LIFX bulbs ?
 
 The daemon handles few commands, but it represente a lot of possible combinations.
-First, it can handle several types of orders to bulbs :
+
+**First**, it can handle several types of orders to bulbs :
 * color
 * on
 * off
 
-Second, you can call :
+**Second**, you can call :
 * All once (all)
 * All with a tag (tag/Bedroom)
 * One bulb with its id (d073d500cd62)
@@ -137,7 +138,7 @@ This mapping is done with the life-kinect.xml :
 </zones>
 ```
 
-Third, you have a color, prefixed by *dark* or *light* :
+**Third**, you have a **color**, prefixed by *dark* or *light* :
 * red
 * orange
 * yellow
@@ -148,7 +149,7 @@ Third, you have a color, prefixed by *dark* or *light* :
 * purple
 * white
 
-Fourth, a last optionnal argument *slow* to do the transition slowly.
+**Fourth**, a last optionnal argument *slow* to do the transition slowly.
 
 Then you could call for example those URLs to immediately execute orders :
 
