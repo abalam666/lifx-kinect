@@ -177,7 +177,7 @@ Here's the custom grammar :
   </custom_grammars>
 ```
 
-The only rule is to prefix the string result by a *>*, like this : `>There is currently 2 windows opened in the house.`.
+The only rule is to prefix the string result by a *>*, for example like this : `>There is currently 2 windows opened in the house.`.
 
 #What is LIFX ?
 
