@@ -82,15 +82,91 @@ ruby 2.1.2p95 (2014-05-08 revision 45877) [armv6l-linux-eabihf]
 
 ## Customization
 
-### Robot name : how can i change the name *viki* to something else ?
+### Robot name : how can i change the name *viki* to something else and the language ?
 
 I'm using this name for my bot, from the movie "I, Robot" ([Virtual Interactive Kinetic Intelligence](http://en.wikipedia.org/wiki/I,_Robot_(film))). But you can change the name with the parameter `botname`.
 
 I personnaly use to change the name of my bot when i want, we could create themes to speak with samples instead of microsoft text-to-speech. These days, it is named McFly, and it calls me Doc ^^
 
-### Grammar : how can i setup the words it can recognize ?
+You just have to setup the parameter *botname* in the main parameters in the XML file named *lifx-kinect.xml* :
+
+```
+<lifx_kinect
+    botname="viki"
+    voice="FR, Hortense"
+    recognitionLanguage="fr-FR"
+    wakeupnow="réveille-toi s'il te plait"
+    sleepnow="endors-toi s'il te plait"
+    turnon="allume"
+    turnoff="éteint"
+    colorize="colore"
+    slowly="lentement"
+    lifxUrl="http://192.168.66.150:1234/"
+    >
+```
+
+### Grammar : how can i setup the zones in my house, and map spoken words to particulary LIFX bulbs ?
+
+The daemon handles few commands, but it represente a lot of possible combinations.
+First, it can handle several types of orders to bulbs :
+* color
+* on
+* off
+
+Second, you can call :
+* All once (all)
+* All with a tag (tag/Bedroom)
+* One bulb with its id (d073d500cd62)
+
+This mapping is done with the life-kinect.xml :
+```
+<zones>
+  <zone path="all" words="toute la maison" />
+  <zone path="tag/RDC" words="le rez-de-chaussée" />
+  <zone path="tag/Etage" words="l'étage" />
+  <zone path="tag/Salle de bain" words="la salle de bain" />
+  <zone path="d073d500d6ca" words="le couloir" />
+</zones>
+```
+
+Third, you have a color, prefixed by *dark* or *light* :
+* red
+* orange
+* yellow
+* green
+* cyan
+* blue
+* pink
+* purple
+* white
+
+Fourth, a last optionnal argument *slow* to do the transition slowly.
+
+Then you could call for example those URLs to immediately execute orders :
+
+```
+http://localhost:1234/off/all
+http://localhost:1234/color/tag/Bedroom/cyan
+http://localhost:1234/color/d073d500cd62/darkpurple
+...etc...
+```
 
 ### Trigger events : how can i make *viki* to call other webervices and talk back the answer ?
+
+In the same XML, you can customize any web service, and the text-to-speech will say the result.
+
+Here's the custom grammar :
+
+```
+<custom_grammars>
+    <grammar url="http://your.web.service.com/api/getTemperature/cuisine" words="quelle est la température de la cuisine" />
+    <grammar url="http://your.web.service.com/api/getTemperature/chambre" words="quelle est la température de la chambre" />
+    <grammar url="http://your.web.service.com/api/getTemperature/salon" words="quelle est la température du salon" />
+    <grammar url="http://your.web.service.com/api/getVent" words="quelle est la température de la cuisine" />
+    <grammar url="http://your.web.service.com/api/getConso" words="combien consomme la maison" />
+    <grammar url="http://your.web.service.com/api/getConso" words="quelle est la consommation actuelle" />
+  </custom_grammars>
+```
 
 #What is LIFX ?
 
