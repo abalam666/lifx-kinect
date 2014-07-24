@@ -41,6 +41,14 @@ You'll have to be sure to have installed every software development toolkits for
 Facultative :
 * [wdexpress_full.exe](http://www.microsoft.com/france/visual-studio/essayez/express.aspx) (if you want to quickly customize logic with visual studio express)
 
+1. Get the sourcecode. For example with the command `git clone https://github.com/abalam666/lifx-kinect`
+2. Edit the configuration file `/lifx-kinect/kinect-recognizer/lifx-kinect.xml`
+3. Check up that you have a microphone and speakers plugged on your PC
+4. Double-click on the program `/kinect-recognizer/bin/x64/Release/jarvis.exe` *Yeah i know... Jarvis was the first botname i used ^^*
+
+If everthing is fine, the program should be waiting for a command.
+As a first check you can try now to say *viki allume toute la maison* and see if it writes your words on the screen.
+
 ### Ruby LIFX daemon
 
 The aim of **this daemon** is to checkup every minutes and to **keep updated the list of living bulbs** ready to accept orders immediately.
