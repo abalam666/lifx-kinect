@@ -1,6 +1,8 @@
 # lifx-kinect
 Drive **lifx bulbs with your voice**.
 
+[![ScreenShot](http://img4.hostingpics.net/pics/325982ScreenShot241.jpg)](http://youtu.be/uEPNLfaTRe4)
+
 ## Requirements
 * a **Kinect** plugged on **Windows 8+**
 * **Ruby 2.0+** with [official LIFX gem](https://github.com/LIFX/lifx-gem)
