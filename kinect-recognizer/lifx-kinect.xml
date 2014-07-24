@@ -13,12 +13,12 @@
     errorMessageWebService="Toutes mes excuses, le service web associé à cette demande a retourné le message d'erreur suivant : "
     >
   <custom_grammars>
-    <grammar url="http://home.aewd.net/api/getTemperature/cuisine" words="quelle est la température de la cuisine" />
-    <grammar url="http://home.aewd.net/api/getTemperature/chambre" words="quelle est la température de la chambre" />
-    <grammar url="http://home.aewd.net/api/getTemperature/salon" words="quelle est la température du salon" />
-    <grammar url="http://home.aewd.net/api/getVent" words="quelle est la température de la cuisine" />
-    <grammar url="http://home.aewd.net/api/getConso" words="combien consomme la maison" />
-    <grammar url="http://home.aewd.net/api/getConso" words="quelle est la consommation actuelle" />
+    <grammar url="http://your.web.service.com/api/getTemperature/cuisine" words="quelle est la température de la cuisine" />
+    <grammar url="http://your.web.service.com/api/getTemperature/chambre" words="quelle est la température de la chambre" />
+    <grammar url="http://your.web.service.comt/api/getTemperature/salon" words="quelle est la température du salon" />
+    <grammar url="http://your.web.service.com/api/getVent" words="quelle est la température de la cuisine" />
+    <grammar url="http://your.web.service.com/api/getConso" words="combien consomme la maison" />
+    <grammar url="http://your.web.service.com/api/getConso" words="quelle est la consommation actuelle" />
   </custom_grammars>
   <lifx_grammars>
     <colors>
